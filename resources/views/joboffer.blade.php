@@ -8,12 +8,13 @@
                         
                         <p class="mt-4 block text-gray-400 text-xs">
                             Published <time>{{$joboffer->updated_at->diffForHumans()}}</time>
-                        </p>
+                        </p> 
 
                         <div class="flex items-center lg:justify-center text-sm mt-4">
                             <img src="/images/lary-avatar.svg" alt="Lary avatar">
                             <div class="ml-3 text-left">
-                                <h5 class="font-bold">{{$joboffer->company->name}}</h5>
+                                <h5 class="font-bold"><a href="/company/{{ $joboffer->company->slug}}">
+                                    {{$joboffer->company->name}}</a></h5>
                                 <h6>in {{$joboffer->location}}</h6>
                             </div>
                         </div>

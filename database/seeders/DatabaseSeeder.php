@@ -32,14 +32,14 @@ class DatabaseSeeder extends Seeder
         'company_name'=> 'Tramm & Hinners',
         'location'=> 'Berlin',
         'excerpt' =>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        'jobdescription'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+        'jobdescription'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
 
        ]);
 
        Joboffer::create([
         'joboffer'=> 'Laravel Framework',
         'category_id'=> '2',
-        'slug'=> 'php-developer',
+        'slug'=> 'laravel-framework',
         'company_id'=> '1',
         'company_name'=> 'Tenmedia',
         'location'=> 'Berlin',
@@ -63,7 +63,7 @@ class DatabaseSeeder extends Seeder
        Joboffer::create([
         'joboffer'=> 'Software Developer Java',
         'category_id'=> '3',
-        'slug'=> 'javascript-developer',
+        'slug'=> 'software-developer-java',
         'company_id'=> '2',
         'company_name'=> 'Secunet',
         'location'=> 'Berlin',
@@ -87,7 +87,7 @@ class DatabaseSeeder extends Seeder
        Joboffer::create([
         'joboffer'=> 'Software Developer',
         'category_id'=> '1',
-        'slug'=> 'html-engineer',
+        'slug'=> 'software-developer',
         'company_id'=> '3',
         'company_name'=> 'Tramm & Hinners',
         'location'=> 'Berlin',
@@ -99,7 +99,7 @@ class DatabaseSeeder extends Seeder
        Joboffer::create([
         'joboffer'=> 'Software Developer Embedded Linux Kernel',
         'category_id'=> '2',
-        'slug'=> 'html-engineer',
+        'slug'=> 'software-developer-embedded-linux-kernel',
         'company_id'=> '3',
         'company_name'=> 'Tramm & Hinners',
         'location'=> 'Berlin',
@@ -111,7 +111,7 @@ class DatabaseSeeder extends Seeder
        Joboffer::create([
         'joboffer'=> 'Software Developer Embedded Systems',
         'category_id'=> '3',
-        'slug'=> 'html-engineer',
+        'slug'=> 'software-developer-embedded-systems',
         'company_id'=> '3',
         'company_name'=> 'Tramm & Hinners',
         'location'=> 'Berlin',
@@ -123,7 +123,7 @@ class DatabaseSeeder extends Seeder
        Joboffer::create([
         'joboffer'=> 'Software Developer Conversational AI',
         'category_id'=> '1',
-        'slug'=> 'html-engineer',
+        'slug'=> 'software-developer-conversational-ai',
         'company_id'=> '3',
         'company_name'=> 'Tramm & Hinners',
         'location'=> 'Berlin',
@@ -135,7 +135,7 @@ class DatabaseSeeder extends Seeder
        Joboffer::create([
         'joboffer'=> 'Internship',
         'category_id'=> '1',
-        'slug'=> 'html-engineer',
+        'slug'=> 'internship',
         'company_id'=> '3',
         'company_name'=> 'Tramm & Hinners',
         'location'=> 'Berlin',
@@ -147,7 +147,7 @@ class DatabaseSeeder extends Seeder
        Joboffer::create([
         'joboffer'=> 'Java Developer',
         'category_id'=> '1',
-        'slug'=> 'html-engineer',
+        'slug'=> 'java-developer',
         'company_id'=> '3',
         'company_name'=> 'Tramm & Hinners',
         'location'=> 'Berlin',

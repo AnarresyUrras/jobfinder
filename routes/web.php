@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\JobofferController;
 use App\Models\Company;
 use App\Models\Category;
 use App\Models\Joboffer;
@@ -17,23 +18,9 @@ use Spatie\YamlFrontMatter\YamlFrontMatter;
 |
 */
 
-Route::get('/', function () {
-   
-        return view('joboffers', [
-            'joboffers' => Joboffer::latest('updated_at')->with('category', 'company')->get(),
-            'categories' => Category::all()
-        ]);
-    })->name('home'); 
+Route::get('/', [JobofferController::class, 'index'])->name('home'); 
 
-
-Route::get('/joboffers/{joboffer:slug}', function(Joboffer $joboffer){ 
-
-    
-    return view('joboffer', [
-        'joboffer' => $joboffer,
-        'categories' => Category::all()
-    ]);
-});
+Route::get('/joboffers/{joboffer:slug}', [JobofferController::class, 'show'])->name('joboffer.show');
 
 Route::get('categories/{category:slug}', function(Category $category){
 
@@ -42,11 +29,19 @@ Route::get('categories/{category:slug}', function(Category $category){
         'currentCategory' => $category,
         'categories' => Category::all()
     ]);
-})->name('categories');
+})->name('category');
 
 Route::get('company/{company:slug}', function (Company $company){
     return view('joboffers', [
         'joboffers' => $company->joboffers->load(['category', 'company']),
         'categories' => Category::all()
     ]);
-})->name('companies');
+})->name('company');
+
+// Route::get('sight/{sight:slug}', function (Sight $sight){
+//     return view('joboffers', [
+//         'joboffers' => Joboffer::latest('updated_at')->with('category', 'company')->get(),
+//         'categories' => Category::all()
+
+//     ]);
+// })->name('sight');
